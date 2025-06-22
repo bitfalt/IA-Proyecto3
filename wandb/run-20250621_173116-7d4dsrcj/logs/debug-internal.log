@@ -1,0 +1,16 @@
+{"time":"2025-06-21T17:31:17.859572-06:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/Users/bitfalt/Developer/IA-Proyecto3/wandb/run-20250621_173116-7d4dsrcj/logs/debug-core.log"}
+{"time":"2025-06-21T17:31:18.183988-06:00","level":"INFO","msg":"stream: created new stream","id":"7d4dsrcj"}
+{"time":"2025-06-21T17:31:18.18403-06:00","level":"INFO","msg":"stream: started","id":"7d4dsrcj"}
+{"time":"2025-06-21T17:31:18.184036-06:00","level":"INFO","msg":"handler: started","stream_id":"7d4dsrcj"}
+{"time":"2025-06-21T17:31:18.184049-06:00","level":"INFO","msg":"sender: started","stream_id":"7d4dsrcj"}
+{"time":"2025-06-21T17:31:18.18406-06:00","level":"INFO","msg":"writer: Do: started","stream_id":"7d4dsrcj"}
+{"time":"2025-06-21T17:31:18.390975-06:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-21T17:34:43.351539-06:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-21T17:34:43.352079-06:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-21T17:34:43.922075-06:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-21T17:34:44.182944-06:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-06-21T17:34:44.189128-06:00","level":"INFO","msg":"stream: closing","id":"7d4dsrcj"}
+{"time":"2025-06-21T17:34:44.189161-06:00","level":"INFO","msg":"handler: closed","stream_id":"7d4dsrcj"}
+{"time":"2025-06-21T17:34:44.189174-06:00","level":"INFO","msg":"sender: closed","stream_id":"7d4dsrcj"}
+{"time":"2025-06-21T17:34:44.18917-06:00","level":"INFO","msg":"writer: Close: closed","stream_id":"7d4dsrcj"}
+{"time":"2025-06-21T17:34:44.189325-06:00","level":"INFO","msg":"stream: closed","id":"7d4dsrcj"}

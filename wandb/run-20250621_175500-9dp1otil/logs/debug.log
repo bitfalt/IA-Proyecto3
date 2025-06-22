@@ -1,0 +1,17 @@
+2025-06-21 17:55:00,148 INFO    MainThread:18328 [wandb_init.py:setup_run_log_directory():703] Logging user logs to /Users/bitfalt/Developer/IA-Proyecto3/wandb/run-20250621_175500-9dp1otil/logs/debug.log
+2025-06-21 17:55:00,148 INFO    MainThread:18328 [wandb_init.py:setup_run_log_directory():704] Logging internal logs to /Users/bitfalt/Developer/IA-Proyecto3/wandb/run-20250621_175500-9dp1otil/logs/debug-internal.log
+2025-06-21 17:55:00,149 INFO    MainThread:18328 [wandb_init.py:init():831] calling init triggers
+2025-06-21 17:55:00,149 INFO    MainThread:18328 [wandb_init.py:init():836] wandb.init called with sweep_config: {}
+config: {'batch_size': 32, 'image_size': 224, 'num_epochs': 50, 'learning_rate': 0.001, 'seed': 42, '_wandb': {}}
+2025-06-21 17:55:01,115 INFO    MainThread:18328 [wandb_init.py:init():872] starting backend
+2025-06-21 17:55:01,115 INFO    MainThread:18328 [wandb_init.py:init():875] sending inform_init request
+2025-06-21 17:55:01,123 INFO    MainThread:18328 [wandb_init.py:init():883] backend started and connected
+2025-06-21 17:55:01,153 INFO    MainThread:18328 [wandb_run.py:_label_probe_notebook():1299] probe notebook
+2025-06-21 17:55:01,158 INFO    MainThread:18328 [wandb_init.py:init():956] updated telemetry
+2025-06-21 17:55:01,218 INFO    MainThread:18328 [wandb_init.py:init():980] communicating run to backend with 90.0 second timeout
+2025-06-21 17:55:01,666 INFO    MainThread:18328 [wandb_init.py:init():1032] starting run threads in backend
+2025-06-21 17:55:01,822 INFO    MainThread:18328 [wandb_run.py:_console_start():2453] atexit reg
+2025-06-21 17:55:01,822 INFO    MainThread:18328 [wandb_run.py:_redirect():2301] redirect: wrap_raw
+2025-06-21 17:55:01,822 INFO    MainThread:18328 [wandb_run.py:_redirect():2370] Wrapping output streams.
+2025-06-21 17:55:01,823 INFO    MainThread:18328 [wandb_run.py:_redirect():2393] Redirects installed.
+2025-06-21 17:55:01,823 INFO    MainThread:18328 [wandb_init.py:init():1078] run started, returning control to user process

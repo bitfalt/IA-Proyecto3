@@ -1,0 +1,44 @@
+{
+  "os":  "macOS-15.5-arm64-arm-64bit",
+  "python":  "CPython 3.12.7",
+  "startedAt":  "2025-06-21T22:53:03.620363Z",
+  "program":  "/Users/bitfalt/Developer/IA-Proyecto3/experimento_1_autoencoder_fixed.ipynb",
+  "codePath":  "experimento_1_autoencoder_fixed.ipynb",
+  "git":  {
+    "remote":  "git@github.com:bitfalt/IA-Proyecto3.git",
+    "commit":  "2be81e3f744b56e42896f90248adca038b29de98"
+  },
+  "email":  "dagarbanz@protonmail.com",
+  "root":  ".",
+  "host":  "bitnon.local",
+  "executable":  "/Users/bitfalt/Library/Caches/pypoetry/virtualenvs/ia-proyecto3-O3zGFkxW-py3.12/bin/python",
+  "codePathLocal":  "experimento_1_autoencoder_fixed.ipynb",
+  "cpu_count":  10,
+  "cpu_count_logical":  10,
+  "disk":  {
+    "/":  {
+      "total":  "494384795648",
+      "used":  "336984301568"
+    },
+    "/System/Volumes/Data":  {
+      "total":  "494384795648",
+      "used":  "336984301568"
+    }
+  },
+  "memory":  {
+    "total":  "17179869184"
+  },
+  "cpu":  {
+    "count":  10,
+    "countLogical":  10
+  },
+  "apple":  {
+    "name":  "Apple M2 Pro",
+    "ecpuCores":  4,
+    "pcpuCores":  6,
+    "gpuCores":  16,
+    "memoryGb":  16,
+    "swapTotalBytes":  "12884901888",
+    "ramTotalBytes":  "17179869184"
+  }
+}

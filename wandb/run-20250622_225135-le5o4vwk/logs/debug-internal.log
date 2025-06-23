@@ -1,0 +1,46 @@
+{"time":"2025-06-22T22:51:35.839913-06:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"m:\\Projects\\IA-Proyecto3\\wandb\\run-20250622_225135-le5o4vwk\\logs\\debug-core.log"}
+{"time":"2025-06-22T22:51:36.5630806-06:00","level":"INFO","msg":"created new stream","id":"le5o4vwk"}
+{"time":"2025-06-22T22:51:36.5630806-06:00","level":"INFO","msg":"stream: started","id":"le5o4vwk"}
+{"time":"2025-06-22T22:51:36.5630806-06:00","level":"INFO","msg":"handler: started","stream_id":"le5o4vwk"}
+{"time":"2025-06-22T22:51:36.5630806-06:00","level":"INFO","msg":"sender: started","stream_id":"le5o4vwk"}
+{"time":"2025-06-22T22:51:36.5630806-06:00","level":"INFO","msg":"writer: Do: started","stream_id":"le5o4vwk"}
+{"time":"2025-06-22T22:51:36.7576607-06:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-22T22:51:40.097441-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-22T22:51:40.4508767-06:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-22T22:51:40.4632284-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-22T22:51:40.486125-06:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-22T22:51:40.4972872-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-22T22:51:40.5001205-06:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-22T22:51:40.5243462-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-22T22:51:40.5291982-06:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-22T22:51:40.5542259-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-22T22:51:40.5542259-06:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-22T22:51:40.5675657-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-22T22:52:04.5528722-06:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-22T22:52:04.5613-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-22T23:23:48.1390914-06:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-22T23:23:49.3983302-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-22T23:37:49.5913112-06:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-22T23:37:51.2548089-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-22T23:40:19.6099845-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/bitfalt-itcr/butterfly-denoising-autoencoder/le5o4vwk/file_stream\": write tcp 192.168.1.79:53301->35.186.228.49:443: wsasend: An established connection was aborted by the software in your host machine."}
+{"time":"2025-06-22T23:46:09.1943493-06:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-22T23:46:11.098735-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-22T23:51:48.3280847-06:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-22T23:51:48.4060155-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-22T23:52:04.0294531-06:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-22T23:52:04.0976341-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-22T23:52:07.6712157-06:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-22T23:52:07.729539-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-22T23:52:07.8047099-06:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-22T23:52:07.8169126-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-22T23:52:07.8510966-06:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-22T23:52:07.8962718-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-22T23:52:08.3557433-06:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-22T23:52:08.4153924-06:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-22T23:52:09.3500753-06:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-22T23:52:09.4678438-06:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 4062-4064, summary","runtime_seconds":0.0560933}],"total_operations":1}}
+{"time":"2025-06-22T23:52:10.2947658-06:00","level":"INFO","msg":"stream: closing","id":"le5o4vwk"}
+{"time":"2025-06-22T23:52:10.2987402-06:00","level":"INFO","msg":"handler: closed","stream_id":"le5o4vwk"}
+{"time":"2025-06-22T23:52:10.3057629-06:00","level":"INFO","msg":"sender: closed","stream_id":"le5o4vwk"}
+{"time":"2025-06-22T23:52:10.2987402-06:00","level":"INFO","msg":"writer: Close: closed","stream_id":"le5o4vwk"}
+{"time":"2025-06-22T23:52:10.3203105-06:00","level":"INFO","msg":"stream: closed","id":"le5o4vwk"}

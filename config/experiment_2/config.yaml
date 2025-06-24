@@ -1,0 +1,101 @@
+defaults:
+  - ../data/butterfly_dataset
+  - ../model/denoising_autoencoder
+  - ../training/default
+  - _self_
+
+# Configuración global
+seed: 42
+
+# Configuración de dispositivo
+device:
+  auto_detect: true
+  precision: "16-mixed"  # Precisión mixta para GPU
+  benchmark: true  # Optimizaciones cuDNN
+
+# Configuración de logging
+logging:
+  use_wandb: true
+  log_every_n_steps: 50
+  save_dir: "logs"
+  project_name: "butterfly-denoising-autoencoder"
+  experiment_name: "experiment_2_denoising_tsne_clustering"
+  tags: ["denoising", "autoencoder", "tsne", "clustering", "unsupervised"]
+
+# Configuración de checkpoints
+checkpointing:
+  monitor: "val_loss"
+  mode: "min"
+  save_top_k: 3
+  save_last: true
+  
+# Configuración de paths
+paths:
+  data_dir: "filtered_dataset/train"
+  metadata_csv: "filtered_dataset/filtered_dataset_metadata.csv"
+  output_dir: "outputs"
+  log_dir: "logs"
+
+# Configuración específica del Experimento 2
+experiment:
+  name: "experiment_2_denoising_autoencoder"
+  description: "Denoising Autoencoder y Visualización del Espacio Latente"
+
+# Configuración del ruido Salt and Pepper
+noise:
+  type: "salt_and_pepper"
+  probability: 0.05
+  apply_during_training: true
+  apply_during_validation: false
+
+# Configuración específica para análisis del espacio latente
+latent_analysis:
+  # Configuración t-SNE
+  tsne:
+    perplexity: 30
+    n_iter: 1000
+    learning_rate: 200
+    random_state: 42
+    
+  # Configuración K-means clustering
+  clustering:
+    method: "kmeans"
+    num_clusters: 30  # Igual al número de clases reales
+    random_state: 42
+    n_init: 10
+    max_iter: 300
+    
+  # Configuración de visualización
+  visualization:
+    save_plots: true
+    plot_size: [12, 8]
+    dpi: 300
+    
+    # Configuración específica para visualización de clusters
+    cluster_visualization:
+      show_samples_per_cluster: 5
+      sample_grid_size: [2, 3]  # 2 filas, 3 columnas por cluster
+      
+# Configuración de métricas específicas para denoising
+evaluation:
+  denoising_metrics:
+    - mse_loss
+    - psnr  # Peak Signal-to-Noise Ratio
+    - ssim  # Structural Similarity Index Measure
+    
+  clustering_metrics:
+    - adjusted_rand_score
+    - normalized_mutual_info_score
+    - silhouette_score
+    
+  # Configuración para análisis de coherencia de clusters
+  cluster_analysis:
+    save_cluster_samples: true
+    analyze_cluster_purity: true
+    generate_cluster_report: true
+
+# Configuración específica del dataset (reutilizar split 70-30 del Experimento 1)
+data:
+  splits:
+    labeled_ratio: 0.3  # Reutilizar configuración del Experimento 1
+    use_unlabeled_for_training: true  # Usar datos no etiquetados para entrenar el autoencoder 

@@ -1,0 +1,34 @@
+# Configuración base para todos los experimentos
+defaults:
+  - data: butterfly_dataset
+  - model: unet_autoencoder
+  - training: default
+
+# Configuración global
+seed: 42
+
+# Configuración de dispositivo
+device:
+  auto_detect: true
+  precision: "16-mixed"  # Precisión mixta para GPU
+  benchmark: true  # Optimizaciones cuDNN
+
+# Configuración de logging
+logging:
+  use_wandb: true
+  log_every_n_steps: 50
+  save_dir: "logs"
+
+# Configuración de checkpoints
+checkpointing:
+  monitor: "val_loss"
+  mode: "min"
+  save_top_k: 3
+  save_last: true
+  
+# Configuración de paths
+paths:
+  data_dir: "filtered_dataset/train"
+  metadata_csv: "filtered_dataset/filtered_dataset_metadata.csv"
+  output_dir: "outputs"
+  log_dir: "logs" 

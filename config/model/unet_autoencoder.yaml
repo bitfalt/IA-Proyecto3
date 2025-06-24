@@ -1,0 +1,17 @@
+# @package _global_
+model:
+  name: "UNetAutoencoder"
+  architecture:
+    n_channels: 3
+    base_channels: 64
+    
+  # Configuración específica para transfer learning
+  transfer_learning:
+    use_pretrained: false
+    freeze_encoder: false
+    
+  # Configuración del clasificador (para experimento 1)
+  classifier:
+    num_classes: 30
+    dropout: 0.5
+    hidden_dims: [512, 256] 

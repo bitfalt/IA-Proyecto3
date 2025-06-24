@@ -1,0 +1,27 @@
+# @package _global_
+model:
+  name: "DenoisingUNetAutoencoder"
+  architecture:
+    n_channels: 3
+    base_channels: 64
+    
+  # Configuración específica del denoising
+  noise:
+    type: "salt_and_pepper"
+    probability: 0.05
+    
+  # Configuración para extracción de features latentes
+  latent_space:
+    extract_features: true
+    feature_dim: 1024  # Dimensión del espacio latente
+    
+  # Configuración para clustering
+  clustering:
+    method: "kmeans"
+    num_clusters: 30
+    
+  # Configuración para t-SNE
+  tsne:
+    perplexity: 30
+    n_iter: 1000
+    learning_rate: 200 

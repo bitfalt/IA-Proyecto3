@@ -1,0 +1,94 @@
+defaults:
+  - ../data/butterfly_dataset
+  - ../model/unet_autoencoder
+  - ../training/default
+  - _self_
+
+# Configuración global
+seed: 42
+
+# Configuración de dispositivo
+device:
+  auto_detect: true
+  precision: "16-mixed"  # Precisión mixta para GPU
+  benchmark: true  # Optimizaciones cuDNN
+
+# Configuración de logging
+logging:
+  use_wandb: true
+  log_every_n_steps: 50
+  save_dir: "logs"
+  project_name: "butterfly-transfer-learning"
+  experiment_name: "experiment_1_modular"
+  tags: ["transfer_learning", "unet", "autoencoder", "semi_supervised"]
+
+# Configuración de checkpoints
+checkpointing:
+  monitor: "val_loss"
+  mode: "min"
+  save_top_k: 3
+  save_last: true
+  
+# Configuración de paths
+paths:
+  data_dir: "filtered_dataset/train"
+  metadata_csv: "filtered_dataset/filtered_dataset_metadata.csv"
+  output_dir: "outputs"
+  log_dir: "logs"
+
+# Configuración específica del Experimento 1
+experiment:
+  name: "experiment_1_transfer_learning"
+  description: "Transfer Learning con Autoencoders U-Net"
+
+# Configuraciones específicas para los diferentes cortes de datos
+data_splits:
+  # Configuración 70-30 (70% no etiquetado, 30% etiquetado)
+  split_70_30:
+    labeled_ratio: 0.3
+    unlabeled_ratio: 0.7
+    
+  # Configuración 80-20 (80% no etiquetado, 20% etiquetado)  
+  split_80_20:
+    labeled_ratio: 0.2
+    unlabeled_ratio: 0.8
+    
+  # Configuración 90-10 (90% no etiquetado, 10% etiquetado)
+  split_90_10:
+    labeled_ratio: 0.1
+    unlabeled_ratio: 0.9
+
+# Configuración de los clasificadores
+classifiers:
+  # Clasificador A: Sin preentrenamiento
+  classifier_a:
+    name: "ButterflyClassifier"
+    use_pretrained_encoder: false
+    freeze_encoder: false
+    
+  # Clasificador B1: Con preentrenamiento, encoder congelado
+  classifier_b1:
+    name: "ButterflyClassifier"
+    use_pretrained_encoder: true
+    freeze_encoder: true
+    
+  # Clasificador B2: Con preentrenamiento, fine-tuning completo
+  classifier_b2:
+    name: "ButterflyClassifier"
+    use_pretrained_encoder: true
+    freeze_encoder: false
+
+# Configuración de métricas de evaluación
+evaluation:
+  metrics:
+    - accuracy
+    - precision
+    - recall
+    - f1_score
+    - confusion_matrix
+  
+  # Configuración para análisis comparativo
+  comparison:
+    save_results: true
+    plot_metrics: true
+    save_confusion_matrices: true 

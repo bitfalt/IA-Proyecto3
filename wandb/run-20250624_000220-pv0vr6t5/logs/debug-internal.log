@@ -1,0 +1,52 @@
+{"time":"2025-06-24T00:02:20.4551492-06:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"m:\\Projects\\IA-Proyecto3\\wandb\\run-20250624_000220-pv0vr6t5\\logs\\debug-core.log"}
+{"time":"2025-06-24T00:02:20.9245043-06:00","level":"INFO","msg":"created new stream","id":"pv0vr6t5"}
+{"time":"2025-06-24T00:02:20.9245043-06:00","level":"INFO","msg":"stream: started","id":"pv0vr6t5"}
+{"time":"2025-06-24T00:02:20.9245043-06:00","level":"INFO","msg":"writer: Do: started","stream_id":"pv0vr6t5"}
+{"time":"2025-06-24T00:02:20.9245043-06:00","level":"INFO","msg":"handler: started","stream_id":"pv0vr6t5"}
+{"time":"2025-06-24T00:02:20.9245043-06:00","level":"INFO","msg":"sender: started","stream_id":"pv0vr6t5"}
+{"time":"2025-06-24T00:02:21.1944286-06:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-24T00:02:25.6338762-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-24T00:02:26.1913619-06:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-24T00:02:26.1997889-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-24T00:02:26.210605-06:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-24T00:02:26.2213156-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-24T00:02:26.224395-06:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-24T00:02:26.2408456-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-24T00:02:26.2447343-06:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-24T00:02:26.26222-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-24T00:02:26.2657121-06:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-24T00:02:26.27634-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-24T00:03:09.1324574-06:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-24T00:03:09.1375592-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-24T00:40:49.8237121-06:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-24T00:40:50.4620493-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-24T00:54:51.01557-06:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-24T00:54:54.1942033-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-24T00:57:43.0409364-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/bitfalt-itcr/butterfly-denoising-autoencoder/pv0vr6t5/file_stream\": write tcp 192.168.1.79:52634->35.186.228.49:443: wsasend: An established connection was aborted by the software in your host machine."}
+{"time":"2025-06-24T00:58:59.0212588-06:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-24T00:59:07.9319711-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-24T01:05:46.8562224-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/bitfalt-itcr/butterfly-denoising-autoencoder/pv0vr6t5/file_stream\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-24T01:06:29.0671403-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-24T01:07:14.4952554-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-24T01:07:50.5178641-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-24T01:08:34.7535673-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-24T01:09:16.3322327-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/bitfalt-itcr/butterfly-denoising-autoencoder/pv0vr6t5/file_stream\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-24T01:09:29.3988095-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-24T01:10:38.1601122-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-24T01:12:08.2988516-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-24T01:12:20.8790073-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/bitfalt-itcr/butterfly-denoising-autoencoder/pv0vr6t5/file_stream\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-24T01:25:45.2981781-06:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-24T01:29:55.6665815-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-24T01:30:02.4370933-06:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-24T01:30:05.8447523-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-24T01:30:22.2110609-06:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-24T01:30:22.5029268-06:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-24T01:30:23.4300471-06:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-24T01:30:23.5421847-06:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-24T01:30:25.0419291-06:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-24T01:30:25.2242286-06:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 4063-4064, summary","runtime_seconds":0.156658}],"total_operations":1}}
+{"time":"2025-06-24T01:30:26.0698703-06:00","level":"INFO","msg":"stream: closing","id":"pv0vr6t5"}
+{"time":"2025-06-24T01:30:26.0746824-06:00","level":"INFO","msg":"handler: closed","stream_id":"pv0vr6t5"}
+{"time":"2025-06-24T01:30:26.0892839-06:00","level":"INFO","msg":"sender: closed","stream_id":"pv0vr6t5"}
+{"time":"2025-06-24T01:30:26.0746824-06:00","level":"INFO","msg":"writer: Close: closed","stream_id":"pv0vr6t5"}
+{"time":"2025-06-24T01:30:26.1417194-06:00","level":"INFO","msg":"stream: closed","id":"pv0vr6t5"}

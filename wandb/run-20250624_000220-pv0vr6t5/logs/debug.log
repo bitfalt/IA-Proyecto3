@@ -1,0 +1,74 @@
+2025-06-24 00:02:20,215 INFO    MainThread:28820 [wandb_setup.py:_flush():70] Current SDK version is 0.19.11
+2025-06-24 00:02:20,215 INFO    MainThread:28820 [wandb_setup.py:_flush():70] Configure stats pid to 28820
+2025-06-24 00:02:20,215 INFO    MainThread:28820 [wandb_setup.py:_flush():70] Loading settings from C:\Users\josep\.config\wandb\settings
+2025-06-24 00:02:20,215 INFO    MainThread:28820 [wandb_setup.py:_flush():70] Loading settings from m:\Projects\IA-Proyecto3\wandb\settings
+2025-06-24 00:02:20,215 INFO    MainThread:28820 [wandb_setup.py:_flush():70] Loading settings from environment variables
+2025-06-24 00:02:20,215 INFO    MainThread:28820 [wandb_init.py:setup_run_log_directory():724] Logging user logs to m:\Projects\IA-Proyecto3\wandb\run-20250624_000220-pv0vr6t5\logs\debug.log
+2025-06-24 00:02:20,216 INFO    MainThread:28820 [wandb_init.py:setup_run_log_directory():725] Logging internal logs to m:\Projects\IA-Proyecto3\wandb\run-20250624_000220-pv0vr6t5\logs\debug-internal.log
+2025-06-24 00:02:20,216 INFO    MainThread:28820 [wandb_init.py:monkeypatch_ipython():643] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x0000024447A06D90>
+2025-06-24 00:02:20,216 INFO    MainThread:28820 [wandb_init.py:init():852] calling init triggers
+2025-06-24 00:02:20,216 INFO    MainThread:28820 [wandb_init.py:init():857] wandb.init called with sweep_config: {}
+config: {'data': {'data_dir': 'filtered_dataset/train', 'metadata_csv': 'filtered_dataset/filtered_dataset_metadata.csv', 'image_size': 224, 'batch_size': 32, 'num_workers': 4, 'splits': {'labeled_ratio': 0.3, 'train_val_split': 0.8, 'use_unlabeled_for_training': True}, 'augmentations': {'train': {'horizontal_flip': 0.5, 'vertical_flip': 0.5, 'rotation': 15, 'color_jitter': {'brightness': 0.2, 'contrast': 0.2, 'saturation': 0.2, 'hue': 0.1}, 'normalize': {'mean': [0.485, 0.456, 0.406], 'std': [0.229, 0.224, 0.225]}}, 'val': {'normalize': {'mean': [0.485, 0.456, 0.406], 'std': [0.229, 0.224, 0.225]}}}}, 'model': {'name': 'DenoisingUNetAutoencoder', 'architecture': {'n_channels': 3, 'base_channels': 64}, 'noise': {'type': 'salt_and_pepper', 'probability': 0.05}, 'latent_space': {'extract_features': True, 'feature_dim': 1024}, 'clustering': {'method': 'kmeans', 'num_clusters': 30}, 'tsne': {'perplexity': 30, 'n_iter': 1000, 'learning_rate': 200}}, 'training': {'max_epochs': 50, 'learning_rate': 0.001, 'optimizer': {'name': 'Adam', 'weight_decay': 0.0}, 'scheduler': {'name': 'ReduceLROnPlateau', 'mode': 'min', 'factor': 0.5, 'patience': 5, 'min_lr': 1e-07}, 'early_stopping': {'monitor': 'val_loss', 'patience': 10, 'mode': 'min'}, 'lightning': {'accelerator': 'auto', 'devices': 'auto', 'precision': '16-mixed', 'gradient_clip_val': 1.0, 'accumulate_grad_batches': 1}, 'validation': {'check_val_every_n_epoch': 1, 'val_check_interval': 1.0}}, 'seed': 42, 'device': {'auto_detect': True, 'precision': '16-mixed', 'benchmark': True}, 'logging': {'use_wandb': True, 'log_every_n_steps': 50, 'save_dir': 'logs', 'project_name': 'butterfly-denoising-autoencoder', 'experiment_name': 'experiment_2_denoising_tsne_clustering', 'tags': ['denoising', 'autoencoder', 'tsne', 'clustering', 'unsupervised']}, 'checkpointing': {'monitor': 'val_loss', 'mode': 'min', 'save_top_k': 3, 'save_last': True}, 'paths': {'data_dir': 'filtered_dataset/train', 'metadata_csv': 'filtered_dataset/filtered_dataset_metadata.csv', 'output_dir': 'outputs', 'log_dir': 'logs'}, 'experiment': {'name': 'experiment_2_denoising_autoencoder', 'description': 'Denoising Autoencoder y Visualización del Espacio Latente'}, 'noise': {'type': 'salt_and_pepper', 'probability': 0.05, 'apply_during_training': True, 'apply_during_validation': False}, 'latent_analysis': {'tsne': {'perplexity': 30, 'n_iter': 1000, 'learning_rate': 200, 'random_state': 42}, 'clustering': {'method': 'kmeans', 'num_clusters': 30, 'random_state': 42, 'n_init': 10, 'max_iter': 300}, 'visualization': {'save_plots': True, 'plot_size': [12, 8], 'dpi': 300, 'cluster_visualization': {'show_samples_per_cluster': 5, 'sample_grid_size': [2, 3]}}}, 'evaluation': {'denoising_metrics': ['mse_loss', 'psnr', 'ssim'], 'clustering_metrics': ['adjusted_rand_score', 'normalized_mutual_info_score', 'silhouette_score'], 'cluster_analysis': {'save_cluster_samples': True, 'analyze_cluster_purity': True, 'generate_cluster_report': True}}, '_wandb': {}}
+2025-06-24 00:02:20,216 INFO    MainThread:28820 [wandb_init.py:init():893] starting backend
+2025-06-24 00:02:20,216 INFO    MainThread:28820 [wandb_init.py:init():897] sending inform_init request
+2025-06-24 00:02:20,391 INFO    MainThread:28820 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn, using: spawn
+2025-06-24 00:02:20,391 INFO    MainThread:28820 [wandb_init.py:init():907] backend started and connected
+2025-06-24 00:02:20,393 INFO    MainThread:28820 [wandb_run.py:_label_probe_notebook():1376] probe notebook
+2025-06-24 00:02:20,395 INFO    MainThread:28820 [wandb_run.py:_label_probe_notebook():1386] Unable to probe notebook: 'charmap' codec can't decode byte 0x8d in position 44339: character maps to <undefined>
+2025-06-24 00:02:20,395 INFO    MainThread:28820 [wandb_init.py:init():1005] updated telemetry
+2025-06-24 00:02:20,434 INFO    MainThread:28820 [wandb_init.py:init():1029] communicating run to backend with 90.0 second timeout
+2025-06-24 00:02:21,190 INFO    MainThread:28820 [wandb_init.py:init():1104] starting run threads in backend
+2025-06-24 00:02:23,751 INFO    MainThread:28820 [wandb_run.py:_console_start():2573] atexit reg
+2025-06-24 00:02:23,751 INFO    MainThread:28820 [wandb_run.py:_redirect():2421] redirect: wrap_raw
+2025-06-24 00:02:23,752 INFO    MainThread:28820 [wandb_run.py:_redirect():2490] Wrapping output streams.
+2025-06-24 00:02:23,752 INFO    MainThread:28820 [wandb_run.py:_redirect():2513] Redirects installed.
+2025-06-24 00:02:23,813 INFO    MainThread:28820 [wandb_init.py:init():1150] run started, returning control to user process
+2025-06-24 00:02:23,816 INFO    MainThread:28820 [wandb_init.py:_post_run_cell_hook():613] [no run ID] resuming backend
+2025-06-24 00:02:25,632 INFO    MainThread:28820 [jupyter.py:save_ipynb():401] [no run ID] not saving jupyter notebook
+2025-06-24 00:02:25,633 INFO    MainThread:28820 [wandb_init.py:_pre_run_cell_hook():602] [no run ID] pausing backend
+2025-06-24 00:02:26,189 INFO    MainThread:28820 [wandb_init.py:_post_run_cell_hook():613] [no run ID] resuming backend
+2025-06-24 00:02:26,198 INFO    MainThread:28820 [jupyter.py:save_ipynb():401] [no run ID] not saving jupyter notebook
+2025-06-24 00:02:26,199 INFO    MainThread:28820 [wandb_init.py:_pre_run_cell_hook():602] [no run ID] pausing backend
+2025-06-24 00:02:26,209 INFO    MainThread:28820 [wandb_init.py:_post_run_cell_hook():613] [no run ID] resuming backend
+2025-06-24 00:02:26,220 INFO    MainThread:28820 [jupyter.py:save_ipynb():401] [no run ID] not saving jupyter notebook
+2025-06-24 00:02:26,221 INFO    MainThread:28820 [wandb_init.py:_pre_run_cell_hook():602] [no run ID] pausing backend
+2025-06-24 00:02:26,224 INFO    MainThread:28820 [wandb_init.py:_post_run_cell_hook():613] [no run ID] resuming backend
+2025-06-24 00:02:26,239 INFO    MainThread:28820 [jupyter.py:save_ipynb():401] [no run ID] not saving jupyter notebook
+2025-06-24 00:02:26,240 INFO    MainThread:28820 [wandb_init.py:_pre_run_cell_hook():602] [no run ID] pausing backend
+2025-06-24 00:02:26,244 INFO    MainThread:28820 [wandb_init.py:_post_run_cell_hook():613] [no run ID] resuming backend
+2025-06-24 00:02:26,261 INFO    MainThread:28820 [jupyter.py:save_ipynb():401] [no run ID] not saving jupyter notebook
+2025-06-24 00:02:26,261 INFO    MainThread:28820 [wandb_init.py:_pre_run_cell_hook():602] [no run ID] pausing backend
+2025-06-24 00:02:26,264 INFO    MainThread:28820 [wandb_init.py:_post_run_cell_hook():613] [no run ID] resuming backend
+2025-06-24 00:02:26,274 INFO    MainThread:28820 [jupyter.py:save_ipynb():401] [no run ID] not saving jupyter notebook
+2025-06-24 00:02:26,274 INFO    MainThread:28820 [wandb_init.py:_pre_run_cell_hook():602] [no run ID] pausing backend
+2025-06-24 00:03:09,131 INFO    MainThread:28820 [wandb_init.py:_post_run_cell_hook():613] [no run ID] resuming backend
+2025-06-24 00:03:09,137 INFO    MainThread:28820 [jupyter.py:save_ipynb():401] [no run ID] not saving jupyter notebook
+2025-06-24 00:03:09,137 INFO    MainThread:28820 [wandb_init.py:_pre_run_cell_hook():602] [no run ID] pausing backend
+2025-06-24 00:40:49,498 INFO    MainThread:28820 [wandb_init.py:_post_run_cell_hook():613] [no run ID] resuming backend
+2025-06-24 00:40:50,417 INFO    MainThread:28820 [jupyter.py:save_ipynb():401] [no run ID] not saving jupyter notebook
+2025-06-24 00:40:50,417 INFO    MainThread:28820 [wandb_init.py:_pre_run_cell_hook():602] [no run ID] pausing backend
+2025-06-24 00:54:51,014 INFO    MainThread:28820 [wandb_init.py:_post_run_cell_hook():613] [no run ID] resuming backend
+2025-06-24 00:54:54,193 INFO    MainThread:28820 [jupyter.py:save_ipynb():401] [no run ID] not saving jupyter notebook
+2025-06-24 00:54:54,193 INFO    MainThread:28820 [wandb_init.py:_pre_run_cell_hook():602] [no run ID] pausing backend
+2025-06-24 00:58:58,020 INFO    MainThread:28820 [wandb_init.py:_post_run_cell_hook():613] [no run ID] resuming backend
+2025-06-24 00:59:07,684 INFO    MainThread:28820 [jupyter.py:save_ipynb():401] [no run ID] not saving jupyter notebook
+2025-06-24 00:59:07,692 INFO    MainThread:28820 [wandb_init.py:_pre_run_cell_hook():602] [no run ID] pausing backend
+2025-06-24 01:25:42,590 INFO    MainThread:28820 [wandb_init.py:_post_run_cell_hook():613] [no run ID] resuming backend
+2025-06-24 01:29:55,572 INFO    MainThread:28820 [jupyter.py:save_ipynb():401] [no run ID] not saving jupyter notebook
+2025-06-24 01:29:55,617 INFO    MainThread:28820 [wandb_init.py:_pre_run_cell_hook():602] [no run ID] pausing backend
+2025-06-24 01:30:02,437 INFO    MainThread:28820 [wandb_init.py:_post_run_cell_hook():613] [no run ID] resuming backend
+2025-06-24 01:30:05,844 INFO    MainThread:28820 [jupyter.py:save_ipynb():401] [no run ID] not saving jupyter notebook
+2025-06-24 01:30:05,844 INFO    MainThread:28820 [wandb_init.py:_pre_run_cell_hook():602] [no run ID] pausing backend
+2025-06-24 01:30:22,211 INFO    MainThread:28820 [wandb_init.py:_post_run_cell_hook():613] [no run ID] resuming backend
+2025-06-24 01:30:22,501 INFO    MainThread:28820 [jupyter.py:save_ipynb():401] [no run ID] not saving jupyter notebook
+2025-06-24 01:30:22,501 INFO    MainThread:28820 [wandb_init.py:_pre_run_cell_hook():602] [no run ID] pausing backend
+2025-06-24 01:30:22,624 INFO    MainThread:28820 [wandb_run.py:_finish():2321] finishing run bitfalt-itcr/butterfly-denoising-autoencoder/pv0vr6t5
+2025-06-24 01:30:22,650 INFO    MainThread:28820 [jupyter.py:save_history():477] not saving jupyter history
+2025-06-24 01:30:22,650 INFO    MainThread:28820 [jupyter.py:save_ipynb():401] not saving jupyter notebook
+2025-06-24 01:30:22,650 INFO    MainThread:28820 [wandb_init.py:_jupyter_teardown():628] cleaning up jupyter logic
+2025-06-24 01:30:22,650 INFO    MainThread:28820 [wandb_run.py:_atexit_cleanup():2538] got exitcode: 0
+2025-06-24 01:30:22,661 INFO    MainThread:28820 [wandb_run.py:_restore():2520] restore
+2025-06-24 01:30:22,661 INFO    MainThread:28820 [wandb_run.py:_restore():2526] restore done
+2025-06-24 01:30:25,805 INFO    MainThread:28820 [wandb_run.py:_footer_history_summary_info():4188] rendering history
+2025-06-24 01:30:25,844 INFO    MainThread:28820 [wandb_run.py:_footer_history_summary_info():4220] rendering summary
+2025-06-24 01:30:25,925 INFO    MainThread:28820 [wandb_run.py:_footer_sync_info():4149] logging synced files

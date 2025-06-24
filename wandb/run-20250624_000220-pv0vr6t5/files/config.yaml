@@ -1,0 +1,204 @@
+_wandb:
+    value:
+        cli_version: 0.19.11
+        m: []
+        python_version: 3.11.4
+        t:
+            "1":
+                - 1
+                - 5
+                - 9
+                - 41
+                - 50
+                - 53
+                - 55
+                - 103
+            "2":
+                - 1
+                - 5
+                - 9
+                - 41
+                - 50
+                - 53
+                - 55
+                - 103
+            "3":
+                - 2
+                - 13
+                - 15
+                - 16
+                - 23
+                - 55
+            "4": 3.11.4
+            "5": 0.19.11
+            "8":
+                - 1
+                - 3
+                - 5
+            "12": 0.19.11
+            "13": windows-amd64
+checkpointing:
+    value:
+        mode: min
+        monitor: val_loss
+        save_last: true
+        save_top_k: 3
+data:
+    value:
+        augmentations:
+            train:
+                color_jitter:
+                    brightness: 0.2
+                    contrast: 0.2
+                    hue: 0.1
+                    saturation: 0.2
+                horizontal_flip: 0.5
+                normalize:
+                    mean:
+                        - 0.485
+                        - 0.456
+                        - 0.406
+                    std:
+                        - 0.229
+                        - 0.224
+                        - 0.225
+                rotation: 15
+                vertical_flip: 0.5
+            val:
+                normalize:
+                    mean:
+                        - 0.485
+                        - 0.456
+                        - 0.406
+                    std:
+                        - 0.229
+                        - 0.224
+                        - 0.225
+        batch_size: 32
+        data_dir: filtered_dataset/train
+        image_size: 224
+        metadata_csv: filtered_dataset/filtered_dataset_metadata.csv
+        num_workers: 4
+        splits:
+            labeled_ratio: 0.3
+            train_val_split: 0.8
+            use_unlabeled_for_training: true
+device:
+    value:
+        auto_detect: true
+        benchmark: true
+        precision: 16-mixed
+evaluation:
+    value:
+        cluster_analysis:
+            analyze_cluster_purity: true
+            generate_cluster_report: true
+            save_cluster_samples: true
+        clustering_metrics:
+            - adjusted_rand_score
+            - normalized_mutual_info_score
+            - silhouette_score
+        denoising_metrics:
+            - mse_loss
+            - psnr
+            - ssim
+experiment:
+    value:
+        description: Denoising Autoencoder y Visualización del Espacio Latente
+        name: experiment_2_denoising_autoencoder
+latent_analysis:
+    value:
+        clustering:
+            max_iter: 300
+            method: kmeans
+            n_init: 10
+            num_clusters: 30
+            random_state: 42
+        tsne:
+            learning_rate: 200
+            n_iter: 1000
+            perplexity: 30
+            random_state: 42
+        visualization:
+            cluster_visualization:
+                sample_grid_size:
+                    - 2
+                    - 3
+                show_samples_per_cluster: 5
+            dpi: 300
+            plot_size:
+                - 12
+                - 8
+            save_plots: true
+logging:
+    value:
+        experiment_name: experiment_2_denoising_tsne_clustering
+        log_every_n_steps: 50
+        project_name: butterfly-denoising-autoencoder
+        save_dir: logs
+        tags:
+            - denoising
+            - autoencoder
+            - tsne
+            - clustering
+            - unsupervised
+        use_wandb: true
+model:
+    value:
+        architecture:
+            base_channels: 64
+            n_channels: 3
+        clustering:
+            method: kmeans
+            num_clusters: 30
+        latent_space:
+            extract_features: true
+            feature_dim: 1024
+        name: DenoisingUNetAutoencoder
+        noise:
+            probability: 0.05
+            type: salt_and_pepper
+        tsne:
+            learning_rate: 200
+            n_iter: 1000
+            perplexity: 30
+noise:
+    value:
+        apply_during_training: true
+        apply_during_validation: false
+        probability: 0.05
+        type: salt_and_pepper
+paths:
+    value:
+        data_dir: filtered_dataset/train
+        log_dir: logs
+        metadata_csv: filtered_dataset/filtered_dataset_metadata.csv
+        output_dir: outputs
+seed:
+    value: 42
+training:
+    value:
+        early_stopping:
+            mode: min
+            monitor: val_loss
+            patience: 10
+        learning_rate: 0.001
+        lightning:
+            accelerator: auto
+            accumulate_grad_batches: 1
+            devices: auto
+            gradient_clip_val: 1
+            precision: 16-mixed
+        max_epochs: 50
+        optimizer:
+            name: Adam
+            weight_decay: 0
+        scheduler:
+            factor: 0.5
+            min_lr: 1e-07
+            mode: min
+            name: ReduceLROnPlateau
+            patience: 5
+        validation:
+            check_val_every_n_epoch: 1
+            val_check_interval: 1

@@ -1,0 +1,12 @@
+{"time":"2025-06-23T23:29:51.4653739-06:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"m:\\Projects\\IA-Proyecto3\\wandb\\run-20250623_232950-8g78g9vs\\logs\\debug-core.log"}
+{"time":"2025-06-23T23:29:51.9099792-06:00","level":"INFO","msg":"created new stream","id":"8g78g9vs"}
+{"time":"2025-06-23T23:29:51.9099792-06:00","level":"INFO","msg":"stream: started","id":"8g78g9vs"}
+{"time":"2025-06-23T23:29:51.9099792-06:00","level":"INFO","msg":"writer: Do: started","stream_id":"8g78g9vs"}
+{"time":"2025-06-23T23:29:51.9099792-06:00","level":"INFO","msg":"sender: started","stream_id":"8g78g9vs"}
+{"time":"2025-06-23T23:29:51.9099792-06:00","level":"INFO","msg":"handler: started","stream_id":"8g78g9vs"}
+{"time":"2025-06-23T23:29:52.2493956-06:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-24T00:57:43.0409364-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/bitfalt-itcr/butterfly-denoising-autoencoder/8g78g9vs/file_stream\": write tcp 192.168.1.79:52633->35.186.228.49:443: wsasend: An established connection was aborted by the software in your host machine."}
+{"time":"2025-06-24T01:05:50.5947595-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/bitfalt-itcr/butterfly-denoising-autoencoder/8g78g9vs/file_stream\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-24T01:06:29.0671403-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-24T01:09:17.8977474-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/bitfalt-itcr/butterfly-denoising-autoencoder/8g78g9vs/file_stream\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-06-24T01:12:25.8266982-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/bitfalt-itcr/butterfly-denoising-autoencoder/8g78g9vs/file_stream\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
